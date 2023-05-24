@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jarik Gamer Animations</title>
+  <style>
+    body {
+      background-color: #333333;
+      color: white;
+	  font-family: Arial, sans-serif;
+      position: relative;
+      min-height: 100vh;
+    }
+    
+    #banner {
+      background-color: #990000;
+      padding: 10px;
+    }
+    
+    #description {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+    #footer {
+      margin-top: 50px;
+      font-size: 14px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    
+    #invisible-button {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      opacity: 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <h1>Jarik Gamer Animations</h1>
+  </div>
+  
+  <div id="description">
+    <p>Официальный сайт Приключений Мопсов (Pug Adventure).</p>
+    <p>Приключения мопсов - Вебсериал, выпускаемый на Ютуб, на нашем дискорд и на этом сайте. Сериал рассказывает забавные истории с 4 мопсами: Ярик, Кирилл, Док. Егор и безымянный Мопс в капюшоне. Пока что вышло 3 эпизода - Pilot, Где наши подарки и Свинья на верху. Пилот был сделан в Июле 2022 года.</p>
+  </div>
+  	<img src="Logo.gif" alt="Logo">
+  
+  <a id="invisible-button" href="1996.html"></a>
+  
+  <div
+	<button onclick="redirectToPage()">1 сезон</button>
+  <script>
+    function redirectToPage() {
+      window.location.href = "season1.html";
+    }
+  </script>
+ </div>
+ 
+ <div
+	<button onclick="redirectToPage2()">Остальное</button>
+  <script>
+    function redirectToPage2() {
+      window.location.href = "other.html";
+    }
+  </script>
+  </div>
+  
+  <div id="footer">
+  	<img src="copyright.gif" alt="Logo">
+    <p>©️Jarik Gamer Animations - 2022-2023. Все права защищены.</p>
+  </div>
+</body>
+</html>
