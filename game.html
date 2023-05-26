@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Jarik Gamer Animations</title>
+	
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+  <style>
+    body {
+      background-color: #333333;
+      color: white;
+	  font-family: Arial, sans-serif;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    a:link  {
+    color:  #FFFFFF;
+    }
+a:visited   {
+    color:  #FFFFFF;
+    }
+a:active    {
+    color:  #FFFFFF;
+    }
+
+    #banner {
+      background-color: #990000;
+      padding: 10px;
+    }
+    
+    #description {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+     #history {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+     #catalog {
+      margin-top: 20px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      right: 0;
+    }
+
+    #footer {
+      margin-top: 50px;
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    #invisible-button {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+     #game-board {
+      width: 800px;
+      height: 600px;
+      border: 1px solid black;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <h1>Game</h1>
+  </div>
+  
+  <div id="catalog">
+	<li class="categories"><h2>Jarik Gamer Animations</h2><ul>	
+</li>
+	<li class="cat-item cat-item-3"><a href="index.html">Главная страница</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="season1.html">1 сезон</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="other.html">Остальное</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="credits.html">Авторы</a>
+</li>
+	</div>
+  <script>
+    // JavaScript код для игры
+
+    // Определение игровых объектов и их свойств
+    var player = {
+      name: "Мопс",
+      sprite: "kennyparody.gif",
+      health: 100,
+      ammo: 50,
+      position: { x: 0, y: 0 },
+      // ...
+    };
+
+    var enemies = [
+      {
+        name: "Скелет",
+        sprite: "skeleton.gif",
+        health: 50,
+        position: { x: 100, y: 100 },
+        // ...
+      },
+      // Другие враги
+    ];
+
+    var boss = {
+      name: "Смерть с косой",
+      sprite: "boss.gif",
+      deathSprite: "boss_die.gif",
+      health: 500,
+      position: { x: 500, y: 500 },
+      // ...
+    };
+
+    // Остальной код игры, включая управление персонажем, врагами и логику уровней,
+    // а также отображение спрайтов и обработку столкновений и событий игры.
+    // ...
+  // Функция для обработки нажатий клавиш
+  function handleKeyDown(event) {
+    if (event.key === "w") {
+      // Движение вверх
+      // ...
+    } else if (event.key === "a") {
+      // Движение влево
+      // ...
+    } else if (event.key === "s") {
+      // Движение вниз
+      // ...
+    } else if (event.key === "d") {
+      // Движение вправо
+      // ...
+    } else if (event.key === "Enter") {
+      // Стрельба
+      // ...
+    }
+  }
+
+  // Функция для обновления игрового состояния
+  function updateGame() {
+    // Обновление позиции персонажей
+    // ...
+  
+    // Проверка столкновений и обработка событий
+    // ...
+  
+    // Обновление отображения игры
+    // ...
+  }
+
+  // Функция для отображения игровых объектов на игровом поле
+  function renderGame() {
+    // Отображение игровых объектов, спрайтов и карт
+    // ...
+  }
+
+  // Функция для создания аптечки
+  function createMedkit() {
+    var medkit = {
+      sprite: "medkit.png",
+      position: { x: getRandomNumber(), y: getRandomNumber() },
+      // ...
+    };
+    // ...
+  }
+
+  // Функция для создания амуниции
+  function createAmmo() {
+    var ammo = {
+      sprite: "ammo.png",
+      position: { x: getRandomNumber(), y: getRandomNumber() },
+      // ...
+    };
+    // ...
+  }
+
+  // Функция для отображения карты
+  function displayMap(mapImage) {
+    // Отображение карты на игровом поле
+    // ...
+  }
+
+  // Инициализация игры
+  function initializeGame() {
+    // Загрузка спрайтов и карт
+    // ...
+
+    // Установка обработчика событий для клавиатуры
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Запуск игрового цикла
+    setInterval(function () {
+      updateGame();
+      renderGame();
+    }, 1000 / 60); // Обновление игры с частотой 60 кадров в секунду
+
+    // Создание аптечки и амуниции
+    createMedkit();
+    createAmmo();
+
+    // Отображение первой карты
+    displayMap("map1.png");
+  }
+
+  // Запуск игры
+  initializeGame();
+
+  </script>
+<div id="footer">
+img src="copyright.gif" alt="Logo">
+<p>©️Jarik Gamer Animations - 2022-2023. Все права защищены.</p>
+</div>
+</body>
+</html>
